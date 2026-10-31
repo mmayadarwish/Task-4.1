@@ -35,3 +35,23 @@
 .course-review-empty,.history-empty{padding:18px 0;color:#84919e;font-size:13px}
 @media(max-width:970px){.course-details-grid{grid-template-columns:1fr}}
 @media(max-width:650px){.course-hero{flex-direction:column;padding:22px}.course-hero h1{font-size:28px}.course-mini-score{min-width:unset;width:100%}.detail-review-head{flex-direction:column}}
+
+
+/* Remove review, confirmation dialog, clickable card, inline errors */
+.row-actions{display:flex;align-items:center;gap:6px}
+.row-actions .row-edit{padding:6px 8px;font-size:12px}
+.row-remove{border:0;background:transparent;color:#b42318;text-decoration:underline;padding:6px 8px;font-size:12px;border-radius:5px}
+.row-remove:hover,.row-remove:focus-visible{background:#fef3f2;color:#8a1a11;outline:none}
+.modal.confirm{width:min(460px,100%)}
+.confirm h2{font:700 22px 'Source Serif 4',Georgia,serif;margin:0 0 12px;color:#243249}
+.confirm p{font-size:14px;line-height:1.6;color:#4b5a6b;margin:0}
+.modal-actions .danger{background:#b42318;border:0;color:#fff;border-radius:6px;padding:11px 16px;font-weight:700}
+.modal-actions .danger:hover,.modal-actions .danger:focus-visible{background:#912018}
+.filter-chip{display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:#e8f5f3;border:1px solid #cbe9e4;color:#1d6b62;padding:10px 12px;border-radius:8px;font-size:12px;margin-bottom:15px}
+.filter-chip button{border:0;background:none;color:#217d87;font-weight:700;text-decoration:underline;font-size:12px;padding:4px}
+.notice{align-items:center;gap:12px}
+.notice button{padding:4px 8px;font-size:13px}
+.field-error{display:flex;gap:6px;align-items:flex-start;color:#b42318;font-size:12px;line-height:1.4}
+.field-error::before{content:"⚠";flex:none}
+.modal input.invalid,.modal select.invalid{border-color:#b42318;background:#fff8f7}
+.modal input.invalid:focus,.modal select.invalid:focus{outline:2px solid #b4231833}
